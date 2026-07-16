@@ -91,14 +91,14 @@ impl KnownBoard for NucleoU5 {
 
     fn probe_target_info(&self) -> ProbeTargetInfo {
         ProbeTargetInfo {
-            chip: "STM32F429ZIT".to_string(),
+            chip: "STM32U545RETxQ".to_string(),
             core: 0,
         }
     }
 
     fn get_settings(&self) -> BoardSettings {
         BoardSettings {
-            arch: Some("cortex-m4".to_string()),
+            arch: Some("cortex-m33".to_string()),
             flash_address: 0x08000000,
             start_address: 0x08040000,
             page_size: 8192,
