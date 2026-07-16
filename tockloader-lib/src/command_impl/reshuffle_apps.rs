@@ -511,6 +511,7 @@ mod tests {
     fn install_new_c_app() {
         let settings: &BoardSettings = &BoardSettings {
             arch: Some("cortex-m4".to_string()),
+            flash_address: 0x00000000,
             start_address: 0x00040000,
             page_size: 512,
             ram_start_address: 0x20000000,
@@ -568,6 +569,7 @@ mod tests {
     fn install_new_rust_app() {
         let settings: &BoardSettings = &BoardSettings {
             arch: Some("cortex-m4".to_string()),
+            flash_address: 0x00000000,
             start_address: 0x00040000,
             page_size: 512,
             ram_start_address: 0x20000000,
@@ -604,6 +606,7 @@ mod tests {
     fn install_more_rust_apps() {
         let settings: &BoardSettings = &BoardSettings {
             arch: Some("cortex-m4".to_string()),
+            flash_address: 0x00000000,
             start_address: 0x00040000,
             page_size: 512,
             ram_start_address: 0x20000000,
@@ -678,6 +681,7 @@ mod tests {
     fn insert_c_app_between_rust_apps() {
         let settings: &BoardSettings = &BoardSettings {
             arch: Some("cortex-m4".to_string()),
+            flash_address: 0x00000000,
             start_address: 0x00040000,
             page_size: 512,
             ram_start_address: 0x20000000,
